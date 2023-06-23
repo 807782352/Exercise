@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .size {
+            /* font-size 必须有单位，否则属性不生效 */
+            font-size: 30px;
+        }
+
+        .weight {
+            font-weight: 700;
+        }
+
+        .not-italic{
+            font-style: normal;
+        }
+
+        .italic{
+            font-style: italic;
+        }
+
+        .line {
+            /* line-height: 20px; */
+
+            /* 行高的值是数字，表示的是当前标签字体大小的倍数 */
+            line-height: 2;
+        }
+
+        .center {
+            /* 注：用行高写法 居中 只适合单行文字 */
+            height: 100px;
+            line-height: 100px;
+            background-color: skyblue;
+        }
+
+
+        .family {
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        .font {
+            font: italic 700 30px/2 楷体;
+        }
+
+        .indent {
+            text-indent: 2em;
+        }
+
+        .align {
+            text-align: center;
+            /* text-align: right; */
+        }
+
+        #one{
+            text-decoration: none;
+        }
+
+        #two {
+            text-decoration: underline;
+        }
+
+        #three{
+            text-decoration: line-through;
+        }
+
+        #four{
+            text-decoration: overline;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <p>文字</p>
+    <p class="size">测试文字大小</p>
+    <p class="weight">测试文字粗细</p>
+
+    <hr>
+
+    <div class="italic">测试文字倾斜</div>
+    <em class="not-italic">测试文字不倾斜</em><br>
+
+    <hr>
+
+
+    <p class="line indent">
+        今年受成本驱动、需求拉动以及全球粮价上涨等各种因素叠加影响，我国粮食价格整体上扬，小麦、玉米、大豆价格高位波动，水稻价格运行平稳，优质优价特征明显，农民择机择时售粮，实现种粮收益最大化。但种粮成本持续攀升成为影响农民增收的“拦路虎”。这是因为，在去年高粮价的刺激下，今年土地租金以及化肥、农药、柴油等农资价格大幅上涨，种粮成本随之增加。加之今年粮食生产遭遇去年北方罕见秋雨秋汛、今年“南旱北涝”等极端天气，虽然没有带来灾害性后果，但一些农户为抗灾付出更多生产成本，种粮农户收益空间进一步收窄。
+    </p>
+
+    <hr>
+
+
+    <p class="center">文字居中</p>
+
+    <hr>
+
+    <p class="family">
+        Hyrule is a vast land and encourages a healthy dose of wanderlust. Part of the fun is going on little adventures, seeing the sights, and exploring to your heart's content.
+    </p>
+
+
+    <hr>
+
+    <p class="font">测试font属性</p>
+
+
+    <hr>
+
+    <h1 class="align">标题文字</h1>
+
+    <div class="align">
+        <img src="./images/1.jpg" alt="cat">
+    </div>
+
+
+
+    <hr>
+    <a id="one" href="#">a 标签，去掉下划线</a>
+    <div id="two">div标签， 添加下划线</div>
+    <p id="three">p标签，添加删除线</p>
+    <span id="four">span标签，添加顶划线</span>
+
+</body>
+</html>
