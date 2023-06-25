@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-child(2n){
+            background-color: green;
+        }
+
+        li:nth-child(2n+1){
+            background-color: red;
+        }
+
+        li:nth-child(5n){
+            color: yellow;
+        }
+
+        li:nth-child(n+5){
+            /*从第五个以后开始的标签*/
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+        <li>li 4</li>
+        <li>li 5</li>
+        <li>li 6</li>
+        <li>li 7</li>
+        <li>li 8</li>
+        <li>li 9</li>
+        <li>li 10</li>
+    </ul>
+</body>
+</html>
