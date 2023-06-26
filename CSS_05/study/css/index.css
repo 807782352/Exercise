@@ -5,3 +5,20 @@
     margin: 0 auto;
     width: 1200px;
 }
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 头部区域 */
+.header {
+    /* 宽度和浏览器一致 */
+    height: 100px;
+    background-color: #fff;
+}
+
+.header .wrapper {
+    padding-top: 29px;
+    display: flex;
+
+}
