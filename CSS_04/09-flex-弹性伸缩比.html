@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 默认情况下，主轴方向尺寸是靠内容撑开；侧轴默认拉伸 */
+        .box {
+            display: flex;
+            border: 1px solid #000;
+            width: 1000px;
+            height: 300px;
+        }
+
+        .box div {
+            background-color: #fff;
+        }
+
+        .box div:nth-child(1) {
+            background-color: pink;
+            width: 100px;
+        }
+
+        /* 第二个盒子和第三个元素的宽之比为 1:2； 分别占据剩余空间的1:2 */
+        .box div:nth-child(2) {
+            background-color: orange;
+            flex: 2;
+        }
+
+        .box div:nth-child(3){
+            background-color: skyblue;
+            flex: 1;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
