@@ -1,0 +1,7 @@
+/* 首页样式 */
+
+/* 版心 (居中）*/
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
