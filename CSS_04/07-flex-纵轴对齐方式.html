@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            display: flex;
+            align-items: stretch;
+
+            border: 1px solid #000;
+            height: 250px;
+        }
+
+        .box2 {
+            display: flex;
+            align-items: center;
+
+            border: 1px solid #000;
+            height: 250px;
+        }
+
+        .box3 {
+            display: flex;
+            align-items: flex-end;
+
+            border: 1px solid #000;
+            height: 250px;
+        }
+
+        .box4 {
+            display: flex;
+            align-items: flex-end;
+
+            border: 1px solid #000;
+            height: 250px;
+        }
+
+        /*第二个div，侧轴居中对齐*/
+        .box4 div:nth-child(2){
+            align-self: flex-start;
+        }
+
+
+        .box1 div {
+            width: 200px;
+            /*弹性盒子在cross axis上没有尺寸才能被拉伸*/
+            /*height: 100px;*/
+            background-color: pink;
+        }
+
+
+        .box2 div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .box3 div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .box4 div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="box4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
