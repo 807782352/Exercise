@@ -126,5 +126,33 @@ body {
     justify-content: space-between;
     height: 420px;
     background-image: url(../uploads/banner.png);
+}
+
+
+/* 侧导航 */
+.banner .left {
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    background-color: rgba(0,0,0,0.42);
+}
+
+.banner .left a {
+    /* 块级：宽度是父级的100%, 更加方便*/
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    font-size: 16px;
+
+    background-image: url(../images/right.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.banner .left a:hover{
+    color: #00a4ff;
+    background-image: url(../images/right-hover.png);
 
 }
+
