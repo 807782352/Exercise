@@ -22,3 +22,80 @@ body {
     display: flex;
 
 }
+
+/* logo */
+.logo a{
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    font-size: 0;
+}
+
+/* nav区域 */
+.nav {
+    margin-left: 102px;
+}
+
+.nav ul {
+    display: flex;
+
+}
+
+.nav li {
+    margin-right: 24px;
+}
+
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+/* active 类选择器，默认选中的a */
+.nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #00a444;
+}
+
+
+/* 搜索 */
+.search {
+    display: flex;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+     
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+
+.search input{
+    flex: 1;
+    border: 0;
+    background-color: transparent;
+
+    /* 去掉表单空间的焦点框 */
+    outline: none;
+}
+
+/* ::placeholder 选中的就是placeholder属性文字样式 */
+.search input::placeholder{
+    font-size: 14px;
+    color: #999;
+}
+
+/* 父级是flex布局，子级就变成了 弹性盒子: 加宽高自动生效 */
+.search a {    
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+    align-self: center;
+}
+
+
+
+
