@@ -310,3 +310,38 @@ body {
     height: 271px;
     background-color: pink;
 }
+
+.bd li .pic {
+    height: 156px;
+
+}
+
+.bd li .text{
+    padding: 20px;
+
+    height: 115px;
+    background-color: #fff;
+}
+
+.bd li .text h4 {
+    margin-bottom: 13px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.bd li .text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+
+.bd li .text p span {
+    color: #fa6400;
+}
+
+.bd li .text p i {
+    font-style: normal;
+}
