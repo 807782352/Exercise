@@ -213,7 +213,6 @@ body {
 }
 
 .banner .right a {
-    
     display: block;
     /* 如果是block，宽默认会100%继承父类的（宽高都是content的） */
     height: 32px;
@@ -223,4 +222,45 @@ body {
     border-radius: 15px;
     font-size: 14px;
     color: #fff;
+}
+
+
+/* 精品推荐区域 */
+.recommend {
+    display: flex;
+    margin-top: 11px;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(211, 211, 211, 0.5);
+}
+
+.recommend h3{
+    font-weight: 400;
+    color: #00a4ff;
+    font-size: 18px;
+}
+
+.recommend ul {
+    /* 除去标题和修改兴趣的尺寸，父级剩余尺寸都给ul，实现把修改兴趣挤到最右侧 */
+    flex: 1;
+    display: flex;
+}
+
+.recommend ul li a {
+    padding: 0 24px;
+    font-size: 18px;
+    /* 在a内 不在li内加border，是因为a是行内元素，边的高度可以和字体一致 */
+    border-right: 1px solid #e0e0e0;
+}
+
+/* 注：last-child 是sibling elements中的最后一位 */
+.recommend ul li:last-child a{
+    border-right: none;
+}
+
+.recommend .modify{
+    font-size: 16px;
+    color: #00a4ff
 }
