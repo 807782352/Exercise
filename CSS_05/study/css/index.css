@@ -96,6 +96,20 @@ body {
     align-self: center;
 }
 
+/* 用户区 */
+.user {
+    margin-left: 32px;
+    margin-top: 4px;
+}
 
+.user img {
+    /* vertical-align 行内元素的垂直方向对齐方式 */
+    vertical-align: middle;
+    margin-right: 7px;
+}
 
+.user span{
+    font-size: 16px;
+    color: #666;
+}
 
