@@ -113,3 +113,18 @@ body {
     color: #666;
 }
 
+
+
+/* banner区域 */
+.banner {
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+
+}
