@@ -18,7 +18,7 @@
     justify-content: flex-end;
 
     height: 52px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .shortcut ul {
@@ -46,3 +46,13 @@
 .shortcut li .login {
     color: #5EB69C;
 }
+
+/* 头部 */
+.header {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    height: 88px;
+    background-color: pink;
+}
+
