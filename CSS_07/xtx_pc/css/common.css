@@ -5,3 +5,18 @@
     margin: 0 auto;
     width: 1240px;
 }
+
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    display: flex;
+    /* 右对齐 */
+    justify-content: flex-end;
+
+    height: 52px;
+    background-color: pink;
+}
