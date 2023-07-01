@@ -56,3 +56,20 @@
     background-color: pink;
 }
 
+/* logo  */
+.header .logo {
+    margin-right: 40px;
+    width: 200px;
+    height: 88px;
+    /* background-color: skyblue; */
+
+}
+
+.header .logo a {
+    /* 转块级，否则宽高不生效 */
+    display: block;
+    font-size: 0;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+}
