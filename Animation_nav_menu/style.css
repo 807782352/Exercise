@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 
+    content-box 的 width 不包括 padding 和 border
+    border-box 的 width 包括 padding 和 border(有border就包含border）   
+    */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    background-color: #08AEEA;
+    background-image: linear-gradient(135deg, #08AEEA 0%, #2AF598 100%);
+
+}
+
+.nav {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav .toggleMenu {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+
+    /* transition 的时间，是根据当前符合.nav .toggleMenu 样式选择器 做出反应渲染的整个时间 */
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.nav.active {
+    width: 600px;
+}
+
+.nav.active .toggleMenu {
+    background-color: #1105fb;
+    transition-delay: 0s;
+    transform: translateY(60px);
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.nav .toggleMenu::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #333;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.nav.active .toggleMenu::before{
+    transition-delay: 0s;
+    background: #fff;
+    transform: translateY(0px) rotate(45deg) scale(0.6);
+}
+
+.nav .toggleMenu::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #333;
+    transform: translateY(5px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.nav.active .toggleMenu::after{
+    transition-delay: 0s;
+    background: #fff;
+    transform: translateY(0px) rotate(135deg) scale(0.6);
+}
+
+
+.nav li {
+    list-style: none;
+    transition: 0.5s;
+    transform: scale(0);
+}
+
+.nav.active li {
+    transition-delay: 0.75s;
+    display: flex;
+    /* gap: 1em; */
+    transform: scale(1);
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.nav li a:hover{
+    background-color: #08AEEA;
+    color: #fff;
+    transition: 0.5s;
+
+}
