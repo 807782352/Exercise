@@ -1,2 +1,2 @@
 # Exercise
-This is folder is used to practice HTML and CSS coding skills
+This is an exercise repo for practising HTML and CSS coding skills.
